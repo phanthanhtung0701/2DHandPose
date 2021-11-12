@@ -3,8 +3,8 @@ import json
 import numpy as np
 from detectron2.structures import BoxMode
 
-####
-
+# Data loader for DHY dataset
+# For hand dataset, ground truth is mask binary image
 def get_hand_dicts(path_json_file, train_path):
     classes = ['right hand', 'left hand']
     dataset_dicts = []
@@ -37,6 +37,7 @@ def get_hand_dicts(path_json_file, train_path):
     return dataset_dicts
 
 
+# For full hand dataset
 def get_hand_dicts_from_via_json(path_json_file, data_path):
     dataset_dicts = []
     with open(path_json_file) as f:

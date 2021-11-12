@@ -4,6 +4,7 @@ import json
 from detectron2.structures import BoxMode
 import pycocotools.mask as mask_util
 
+# Data loader for FHAB dataset
 # Change this path
 root = '/mnt/disks/hs03/Data_Hand/FHAB'
 # hand_annotation_root = os.path.join(root, 'Hand_segmetation_annotation')
